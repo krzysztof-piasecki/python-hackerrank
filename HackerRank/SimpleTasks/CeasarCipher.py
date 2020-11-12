@@ -23,13 +23,13 @@ ASCII_values = []
 for char in givenString:
 
     if char.isupper():
-        startLetter = ASCII_upper_letters_start
-        endLetter = ASCII_upper_letters_end
+        start_letter = ASCII_upper_letters_start
+        end_letter = ASCII_upper_letters_end
     else:
-        startLetter = ASCII_lower_letters_start
-        endLetter = ASCII_lower_letters_end
+        start_letter = ASCII_lower_letters_start
+        end_letter = ASCII_lower_letters_end
 
-    ASCII_values.append(lettershift(char, shift, startLetter, endLetter))
+    ASCII_values.append(lettershift(char, shift, start_letter, end_letter))
 
 for numbers in ASCII_values:
     print(chr(numbers), end='')

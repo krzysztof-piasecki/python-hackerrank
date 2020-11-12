@@ -12,18 +12,18 @@ amount = highest - lowest
 i, j = 0, 0
 step = 1
 while amount > i:
-    isSlicable = True
+    is_slicable = True
     while len(table) > (j + 1):
         if table[j + 1] - table[j] != step:
-            isSlicable = False
+            is_slicable = False
         j += 1
     j = 0
     i += 1
     step += 1
-    if isSlicable:
+    if is_slicable:
         break
 try:
     t = table[1]
 except IndexError:
-    isSlicable = True
-print(isSlicable)
+    is_slicable = True
+print(is_slicable)

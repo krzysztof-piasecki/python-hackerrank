@@ -7,4 +7,4 @@ if john > betty:
 elif betty > john:
     print("Betty")
 else:
-    print("Nobody")
+    print("NOBODY")

@@ -6,8 +6,7 @@ while int(input()) != 0:
     work = 0
     amount = 0
     current_weight = 0
-    while i < len(table):
+    for i in range(len(table)):
         current_weight += table[i]
         work += abs(current_weight)
-        i += 1
     print(work)

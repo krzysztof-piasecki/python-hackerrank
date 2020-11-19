@@ -8,11 +8,11 @@ def find_highest_sum(_support_table, _highest_sum):
 
 size = int(input())
 matrix = []
-support_table = []
+support_array = []
 
 for x in range(size):
-    table = [int(i) for i in input().split(" ")]
-    matrix.append(table)
+    array = [int(i) for i in input().split(" ")]
+    matrix.append(array)
 
 highest_sum = -1000
 i = 0
@@ -23,17 +23,17 @@ for x in range(size):
     while y < size:
         while z < size:
             if next_iteration:
-                support_table.append(matrix[y][z])
+                support_array.append(matrix[y][z])
             else:
-                support_table[i] = support_table[i] + matrix[y][z]
+                support_array[i] = support_array[i] + matrix[y][z]
             i += 1
             z += 1
         next_iteration = False
         i = 0
-        highest_sum = max(highest_sum, find_highest_sum(support_table, highest_sum))
+        highest_sum = max(highest_sum, find_highest_sum(support_array, highest_sum))
         y += 1
         z = 0
     next_iteration = True
-    support_table = []
+    support_array = []
     y = x + 1
 print(highest_sum)

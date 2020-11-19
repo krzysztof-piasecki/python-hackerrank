@@ -1,20 +1,20 @@
 lowest = -1
 highest = -1
-table = [int(i) for i in input().split(" ")]
-for x in table:
+array = [int(i) for i in input().split(" ")]
+for x in array:
     if x > highest or highest == -1:
         highest = x
     if x < lowest or lowest == -1:
         lowest = x
-table.sort()
+array.sort()
 amount = highest - lowest
 
 i, j = 0, 0
 step = 1
 while amount > i:
     is_slicable = True
-    while len(table) > (j + 1):
-        if table[j + 1] - table[j] != step:
+    while len(array) > (j + 1):
+        if array[j + 1] - array[j] != step:
             is_slicable = False
         j += 1
     j = 0
@@ -23,7 +23,7 @@ while amount > i:
     if is_slicable:
         break
 try:
-    t = table[1]
+    t = array[1]
 except IndexError:
     is_slicable = True
 print(is_slicable)

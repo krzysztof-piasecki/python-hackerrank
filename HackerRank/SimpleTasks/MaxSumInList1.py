@@ -1,8 +1,8 @@
-table = [int(i) for i in input().split(" ")]
+array = [int(i) for i in input().split(" ")]
 
 current_sum = 0
 largest_sum = 0
-for i in table:
+for i in array:
     current_sum += i
     if current_sum < 0:
         current_sum = 0

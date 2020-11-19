@@ -2,8 +2,8 @@ import math
 number_of_test_cases = int(input())
 
 for i in range(number_of_test_cases):
-    table = [int(i) for i in input().split(" ")]
-    first_paycheck, mars_money = table[0], table[1]
+    array = [int(i) for i in input().split(" ")]
+    first_paycheck, mars_money = array[0], array[1]
     if first_paycheck == mars_money:
         print(1)
     else:

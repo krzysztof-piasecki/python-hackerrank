@@ -1,6 +1,6 @@
-table = [int(i) for i in input().split(" ")]
-john = int(table[0])
-betty = int(table[1])
+array = [int(i) for i in input().split(" ")]
+john = int(array[0])
+betty = int(array[1])
 
 if john > betty:
     print("John")

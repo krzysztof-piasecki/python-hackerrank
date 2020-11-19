@@ -2,8 +2,8 @@ from collections import defaultdict
 
 first_solution = {}
 second_solution = {}
-table = [int(i) for i in input().split(" ")]
-n, x, y = table[0], table[1], table[2]
+array = [int(i) for i in input().split(" ")]
+n, x, y = array[0], array[1], array[2]
 
 a = b = c = d = 0
 

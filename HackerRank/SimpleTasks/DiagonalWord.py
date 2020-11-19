@@ -1,10 +1,10 @@
 positions = int(input())
 
-table = []
+array = []
 for i in range(positions):
-    table.append(input())
+    array.append(input())
 
 new_word = ""
 for i in range(positions):
-    new_word += (table[i][i])
+    new_word += (array[i][i])
 print(new_word)

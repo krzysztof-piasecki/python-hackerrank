@@ -52,6 +52,7 @@ def sum_side(array):
     sumNumbers = sumNumberLeft - sumNumberRight
     return sumNumbers / x if x != 0 else "NO"
 
+
 test_cases = int(input())
 
 for i in range(test_cases):

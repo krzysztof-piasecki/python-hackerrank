@@ -1,0 +1,17 @@
+def getInvCount(arr, n):
+    inv_count = 0
+    for i in range(n):
+        for j in range(i + 1, n):
+            if (arr[i] > arr[j]):
+                inv_count += 1
+
+    return inv_count
+
+
+# Driver Code
+test_cases = int(input())
+array = []
+for i in range(test_cases):
+    array.append(int(input()))
+n = len(array)
+print(getInvCount(array, n))
